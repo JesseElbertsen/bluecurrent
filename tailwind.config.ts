@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          light: "#e5f2ff", // Bijvoorbeeld een lichtere kleur
+          DEFAULT: "#f4f4f4", // Standaardkleur (gebruik 'DEFAULT' als basiskleur)
+          dark: "#eef7ff", // Donkere variant
+        },
+        secondary: "#3399ff", // Een enkele kleur zonder tinten
       },
     },
   },
