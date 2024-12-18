@@ -21,6 +21,7 @@ const ScreenSwitcher: React.FC = () => {
           className="h-full bg-secondary rounded-[9.5px]"
           style={{
             width: `${(progress / 100) * 17.875}rem`, // Verhoogt de breedte op basis van de voortgang
+            transition: "left 0.3s ease-in-out",
           }}
         ></div>
       </div>

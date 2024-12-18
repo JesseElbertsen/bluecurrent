@@ -10,22 +10,14 @@ export default function Header() {
           alt="Powered by"
           width={275}
           height={38}
-          className="powered-by"
-          style={{
-            margin: "0 47.688rem 2.563rem 10.438rem",
-            objectFit: "contain",
-          }}
+          className="m-0 object-contain md:mr-[47.688rem] md:mb-[2.563rem] md:ml-[10.438rem]"
         />
         <Image
           src="/Images/blue-current-logo-blue-v-2.png"
           alt="Blue Current Logo"
           width={70}
           height={42}
-          className="blue-current-logo"
-          style={{
-            margin: "0 10.313rem 2.313rem 0rem",
-            objectFit: "contain",
-          }}
+          className="m-0 object-contain md:mr-[10.313rem] md:mb-[2.313rem]"
         />
       </div>
     </header>
