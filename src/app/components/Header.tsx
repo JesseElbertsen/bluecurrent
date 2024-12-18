@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="h-[9.5rem] max-w-[90rem] bg-red-100">
+    <header className="h-[9.5rem] md:max-w-[90rem] bg-red-100">
       <div className="flex justify-between items-center bg-primary h-[7.938rem] max-w-[90rem] pt-[3rem] pb-0 pl-0 pr-0">
         <Image
           src="/Images/powered-by.png"
