@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ContactForm from "./ContactForm";
 
 const ScreenSwitcher: React.FC = () => {
   // State om bij te houden welk scherm wordt weergegeven
@@ -40,28 +41,37 @@ const ScreenSwitcher: React.FC = () => {
       <div className="flex justify-center items-center md:w-[90rem] bg-red-100">
         {/* Scherm 1 */}
         {currentScreen === 1 && (
-          <div className="md:w-[69.375rem] h-[53.5rem] m-[1.25rem_0_2.25rem] p-[4rem] pt-[4rem] pb-[5rem] pr-[5.938rem] pl-[2.5rem] rounded-[10px] bg-primary-light">
-            <h1>Scherm 1</h1>
-            <p>Dit is het eerste scherm.</p>
+          <div>
+            <div className="md:w-[69.375rem] h-[53.5rem] m-[1.25rem_0_2.25rem] p-[4rem] pt-[4rem] pb-[5rem] pr-[5.938rem] pl-[2.5rem] rounded-[10px] bg-primary-light">
+              <ContactForm />
+            </div>
+            <button
+              onClick={switchScreen}
+              className=" p-2 bg-blue-500 text-white rounded"
+            >
+              Wissel van scherm
+            </button>
           </div>
         )}
 
         {/* Scherm 2 */}
         {currentScreen === 2 && (
-          <div className="md:w-[69.375rem] h-[31.688rem] m-[1.25rem_0_2.25rem] p-[4rem] pt-[4rem] pb-[5rem] pr-[5.938rem] pl-[2.5rem] rounded-[10px] bg-primary-light">
-            <h1>Scherm 2</h1>
-            <p>Dit is het tweede scherm.</p>
+          <div>
+            <div className="md:w-[69.375rem] h-[31.688rem] m-[1.25rem_0_2.25rem] p-[4rem] pt-[4rem] pb-[5rem] pr-[5.938rem] pl-[2.5rem] rounded-[10px] bg-primary-light">
+              <h1>Scherm 2</h1>
+              <p>Dit is het tweede scherm.</p>
+            </div>
+            <button
+              onClick={switchScreen}
+              className="mt-4 p-2 bg-blue-500 text-white rounded"
+            >
+              Wissel van scherm
+            </button>
           </div>
         )}
       </div>
 
       {/* Knop om het scherm te wisselen */}
-      <button
-        onClick={switchScreen}
-        className="mt-4 p-2 bg-blue-500 text-white rounded"
-      >
-        Wissel van scherm
-      </button>
     </div>
   );
 };
