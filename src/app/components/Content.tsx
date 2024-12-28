@@ -38,7 +38,7 @@ const ScreenSwitcher: React.FC = () => {
       ></div>
 
       {/* Container voor de schermen */}
-      <div className="flex justify-center items-center md:w-[90rem] bg-red-100">
+      <div className="flex justify-center items-center md:w-[90rem] ">
         {/* Scherm 1 */}
         {currentScreen === 1 && (
           <div>
